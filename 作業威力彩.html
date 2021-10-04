@@ -12,12 +12,12 @@
       return Math.round(Math.random()*(max - min))+min
     }
 
-    const goupA =[]
+    const groupA =[]
     // 方法一
     for(i=0; i<6; i++){
       // 隨機取一個數
-      const num = ran(1 ,38)
-        if(grpupA.includes(num)){
+      const num = rand(1 ,38)
+        if(groupA.includes(num)){
           // 如果重複了這個迴圈再跑一次
           i--
         } else {
@@ -25,7 +25,12 @@
           groupA.push(num)
         }
     }
-    document.write(groupA.join(','))    
+    const groupB =() =>{
+      return Math.round(Math.random()*(8-1))+1
+    }
+    document.write("A區:"+ groupA.join(','))
+    document.write("<br>")
+    document.write("B區:"+ groupB())   
     
   </script>
 </body>
